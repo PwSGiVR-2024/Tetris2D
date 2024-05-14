@@ -6,11 +6,11 @@ public static class Dane
 {
     public static readonly float cos = Mathf.Cos(Mathf.PI / 2f);
     public static readonly float sin = Mathf.Sin(Mathf.PI / 2f);
-    public static readonly float[] RotationMatrix = new float[] { cos, sin, -sin, cos };
+    public static readonly float[] RotationMatrix = new float[] { cos, sin, -sin, cos }; // tablica macierzy dla obrotu o 90 stopni
 
     public static readonly Dictionary<Tetro, Vector2Int[]> kratka = new Dictionary<Tetro, Vector2Int[]>()
     {
-        { Tetro.I, new Vector2Int[] { new Vector2Int(-1, 1), new Vector2Int( 0, 1), new Vector2Int( 1, 1), new Vector2Int( 2, 1) } },
+        { Tetro.I, new Vector2Int[] { new Vector2Int(-1, 1), new Vector2Int( 0, 1), new Vector2Int( 1, 1), new Vector2Int( 2, 1) } }, //zestawy przesuniec
         { Tetro.J, new Vector2Int[] { new Vector2Int(-1, 1), new Vector2Int(-1, 0), new Vector2Int( 0, 0), new Vector2Int( 1, 0) } },
         { Tetro.L, new Vector2Int[] { new Vector2Int( 1, 1), new Vector2Int(-1, 0), new Vector2Int( 0, 0), new Vector2Int( 1, 0) } },
         { Tetro.O, new Vector2Int[] { new Vector2Int( 0, 1), new Vector2Int( 1, 1), new Vector2Int( 0, 0), new Vector2Int( 1, 0) } },
