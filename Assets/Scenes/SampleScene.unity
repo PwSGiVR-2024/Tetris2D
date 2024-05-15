@@ -595,6 +595,7 @@ GameObject:
   - component: {fileID: 1963807055}
   - component: {fileID: 1963807054}
   - component: {fileID: 1963807056}
+  - component: {fileID: 1963807057}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -642,6 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56fb198a42ab1349bac106de40c31ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
   tetrisy:
   - tetro: 0
     tile: {fileID: 11400000, guid: 961ea91e63c72b642a5462175f668db4, type: 2}
@@ -664,6 +666,25 @@ MonoBehaviour:
   - tetro: 6
     tile: {fileID: 11400000, guid: 324ac749283b9c1459f9755d1f5315ed, type: 2}
     kratka: []
+--- !u!114 &1963807057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963807053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95519a08e74bf154e90db321ca7bc5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tablica: {fileID: 0}
+  data:
+    tetro: 0
+    tile: {fileID: 0}
+    kratka: []
+  position: {x: 0, y: 0, z: 0}
+  kratka: []
 --- !u!1 &2071732122
 GameObject:
   m_ObjectHideFlags: 0
