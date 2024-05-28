@@ -666,6 +666,8 @@ MonoBehaviour:
   - tetro: 6
     tile: {fileID: 11400000, guid: 324ac749283b9c1459f9755d1f5315ed, type: 2}
     kratka: []
+  activePiece: {fileID: 0}
+  spawnPosition: {x: -1, y: 8, z: 0}
 --- !u!114 &1963807057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,7 +686,14 @@ MonoBehaviour:
     tile: {fileID: 0}
     kratka: []
   position: {x: 0, y: 0, z: 0}
-  kratka: []
+  kratka:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
 --- !u!1 &2071732122
 GameObject:
   m_ObjectHideFlags: 0
