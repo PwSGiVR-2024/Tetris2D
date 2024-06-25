@@ -20,6 +20,11 @@ public struct Tetrodata
     public Tetro tetro;
     public Tile tile;
     public Vector2Int[] kratka;
+    public Vector2Int[,] WallKicks;
+
     public void Initialize()
-    { this.kratka = Dane.kratka[this.tetro]; }
+    { 
+        this.kratka = Dane.kratka[this.tetro];
+        this.WallKicks = Dane.WallKicks[this.tetro];
+    }
 }
