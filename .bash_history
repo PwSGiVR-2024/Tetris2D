@@ -36,3 +36,12 @@ git commit -m "Naprawa"
 git pull --rebase
 git pull --rebase
 git push
+git status
+git add .
+git commit -m "movement system i naprawa muzyki"
+git push
+git fetch
+git add .
+git commit -m "movementsystem i muzyka"
+git push
+git pull
