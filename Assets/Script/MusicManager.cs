@@ -25,15 +25,4 @@ public class MusicManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    /*// Optional: Methods to control music (Play, Pause, Stop, etc.)
-    public void PlayMusic()
-    {
-        if (GetComponent<AudioSource>().isPlaying) return;
-        GetComponent<AudioSource>().Play();
-    }
-
-    public void StopMusic()
-    {
-        GetComponent<AudioSource>().Stop();
-    }*/
 }
