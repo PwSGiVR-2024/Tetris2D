@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56fb198a42ab1349bac106de40c31ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
+  tilemap: {fileID: 977139612}
   tetrisy:
   - tetro: 0
     tile: {fileID: 11400000, guid: 961ea91e63c72b642a5462175f668db4, type: 2}
@@ -668,6 +668,7 @@ MonoBehaviour:
     kratka: []
   activePiece: {fileID: 0}
   spawnPosition: {x: -1, y: 8, z: 0}
+  boardSize: {x: 10, y: 20}
 --- !u!114 &1963807057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95519a08e74bf154e90db321ca7bc5db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tablica: {fileID: 0}
+  tablica: {fileID: 1963807056}
   data:
     tetro: 0
     tile: {fileID: 0}
@@ -694,6 +695,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  tilemap: {fileID: 315712334}
 --- !u!1 &2071732122
 GameObject:
   m_ObjectHideFlags: 0

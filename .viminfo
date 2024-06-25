@@ -25,15 +25,34 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/.git/MERGE_MSG
-|4,48,1,0,1715757669,"~/.git/MERGE_MSG"
+'0  3  2  ~/.git/MERGE_MSG
+|4,48,3,2,1719349297,"~/.git/MERGE_MSG"
+'1  1  0  ~/.git/MERGE_MSG
+|4,49,1,0,1715757669,"~/.git/MERGE_MSG"
+'2  1  0  ~/.git/MERGE_MSG
+|4,50,1,0,1715757669,"~/.git/MERGE_MSG"
 
 # Jumplist (newest first):
+-'  3  2  ~/.git/MERGE_MSG
+|4,39,3,2,1719349297,"~/.git/MERGE_MSG"
+-'  1  79  ~/.git/MERGE_MSG
+|4,39,1,79,1719349071,"~/.git/MERGE_MSG"
 -'  1  0  ~/.git/MERGE_MSG
 |4,39,1,0,1715757669,"~/.git/MERGE_MSG"
 
 # History of marks within files (newest to oldest):
 
 > ~/.git/MERGE_MSG
-	*	1715757649	0
-	"	1	0
+	*	1719349289	0
+	"	3	2
+	^	2	0
+	.	3	0
+	+	1	65
+	+	1	67
+	+	1	80
+	+	4	1
+	+	3	0
+	+	7	12
+	+	3	0
+	+	4	0
+	+	3	0
