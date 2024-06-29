@@ -67,3 +67,13 @@ git checkout master
 git checkout commit a28c87100b00e6571deb314e618045db43083ec2
 git checkout a28c87100b00e6571deb314e618045db43083ec2
 git checkout master
+git add .
+git commit -m "poprawiony spawn i duch dla klocków"
+git push
+git add .
+git commit -m "score medzer"
+git push
+git pull
+git add .
+git commit -m "pauza menadzer"
+git push
