@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Tilemaps;
+
 public class Board : MonoBehaviour
 {
     public Tilemap tilemap { get; private set; }
@@ -8,6 +9,8 @@ public class Board : MonoBehaviour
     public TetrominoData[] tetrominoes;
     public Vector2Int boardSize = new Vector2Int(10, 20);
     public Vector3Int spawnPosition = new Vector3Int(-1, 8, 0);
+
+    public ScoreManager scoreManager; // Dodane odniesienie do ScoreManager
 
     public RectInt Bounds
     {
@@ -22,6 +25,7 @@ public class Board : MonoBehaviour
     {
         tilemap = GetComponentInChildren<Tilemap>();
         activePiece = GetComponentInChildren<Piece>();
+        scoreManager = FindObjectOfType<ScoreManager>(); // Inicjalizacja ScoreManager
 
         for (int i = 0; i < tetrominoes.Length; i++)
         {
@@ -54,8 +58,6 @@ public class Board : MonoBehaviour
     public void GameOver()
     {
         tilemap.ClearAllTiles();
-
-        
     }
 
     public void Set(Piece piece)
@@ -80,18 +82,15 @@ public class Board : MonoBehaviour
     {
         RectInt bounds = Bounds;
 
-        
         for (int i = 0; i < piece.cells.Length; i++)
         {
             Vector3Int tilePosition = piece.cells[i] + position;
 
-            
             if (!bounds.Contains((Vector2Int)tilePosition))
             {
                 return false;
             }
 
-            
             if (tilemap.HasTile(tilePosition))
             {
                 return false;
@@ -106,10 +105,8 @@ public class Board : MonoBehaviour
         RectInt bounds = Bounds;
         int row = bounds.yMin;
 
-        
         while (row < bounds.yMax)
         {
-            
             if (IsLineFull(row))
             {
                 LineClear(row);
@@ -129,7 +126,6 @@ public class Board : MonoBehaviour
         {
             Vector3Int position = new Vector3Int(col, row, 0);
 
-            
             if (!tilemap.HasTile(position))
             {
                 return false;
@@ -143,14 +139,12 @@ public class Board : MonoBehaviour
     {
         RectInt bounds = Bounds;
 
-        
         for (int col = bounds.xMin; col < bounds.xMax; col++)
         {
             Vector3Int position = new Vector3Int(col, row, 0);
             tilemap.SetTile(position, null);
         }
 
-        
         while (row < bounds.yMax)
         {
             for (int col = bounds.xMin; col < bounds.xMax; col++)
@@ -164,6 +158,7 @@ public class Board : MonoBehaviour
 
             row++;
         }
-    }
 
+        scoreManager.AddScore(1); // Aktualizacja punktów przy ka¿dym czyszczeniu linii
+    }
 }
