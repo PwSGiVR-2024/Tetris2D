@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 public class Board : MonoBehaviour
@@ -54,10 +55,11 @@ public class Board : MonoBehaviour
             GameOver();
         }
     }
-
+  
     public void GameOver()
     {
         tilemap.ClearAllTiles();
+        SceneManager.LoadScene("GameOver");
     }
 
     public void Set(Piece piece)
